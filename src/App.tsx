@@ -7,29 +7,34 @@ function App() {
     // обязана вернуть JSX
     return (
         <div>
-            This is App component.
-            <Rating />
-            <Accordion />
+            <AppTitle/>
+            <Rating/>
+            <Accordion/>
         </div>
     );
 }
 
+function AppTitle() {
+    return <>This is App component.</>
+
+}
+
 function Star() {
     return (
-        <div>
+        <>
             <div>star</div>
             <div>star</div>
             <div>star</div>
-        </div>
+        </>
     );
 
 }
 
 function Rating() {
-    debugger
+    //debugger
     return (
         <div>
-            <Star />
+            <Star/>
         </div>
     );
 }
