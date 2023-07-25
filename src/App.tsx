@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
+    console.log("App rendering")
     // полезное что-то
 
     // обязана вернуть JSX
@@ -15,11 +16,12 @@ function App() {
 }
 
 function AppTitle() {
+    console.log("AppTitle rendering")
     return <>This is App component.</>
 }
 
 function Star() {
-    console.log("Star rendered")
+    console.log("Star rendering")
     return (
         <>
             <div>star</div>
@@ -29,7 +31,7 @@ function Star() {
 }
 
 function Rating() {
-    console.log("Rating rendered")
+    console.log("Rating rendering")
     return (
         <div>
             <Star/>
@@ -43,7 +45,7 @@ function Rating() {
 
 
 function Accordion() {
-    console.log("Accordion rendered")
+    console.log("Accordion rendering")
     return <div>
         <h3>Меню</h3>
         <ul>
@@ -54,6 +56,5 @@ function Accordion() {
     </div>
 
 }
-
 
 export default App;
