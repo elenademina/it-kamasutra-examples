@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
 
-
 function App() {
-    debugger
     // полезное что-то
 
     // обязана вернуть JSX
@@ -31,7 +29,7 @@ function Star() {
 }
 
 function Rating() {
-    //debugger
+    console.log("Rating rendered")
     return (
         <div>
             <Star/>
@@ -45,6 +43,7 @@ function Rating() {
 
 
 function Accordion() {
+    console.log("Accordion rendered")
     return <div>
         <h3>Меню</h3>
         <ul>
