@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 
+
 function App() {
+    debugger
     // полезное что-то
 
     // обязана вернуть JSX
@@ -16,14 +18,12 @@ function App() {
 
 function AppTitle() {
     return <>This is App component.</>
-
 }
 
 function Star() {
+    console.log("Star rendered")
     return (
         <>
-            <div>star</div>
-            <div>star</div>
             <div>star</div>
         </>
     );
@@ -34,6 +34,10 @@ function Rating() {
     //debugger
     return (
         <div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
             <Star/>
         </div>
     );
